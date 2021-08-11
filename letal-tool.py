@@ -35,7 +35,7 @@ def main():
     print(Fore.GREEN + "[2] GEN + CHECKER DE NITRO")
     print(Fore.GREEN + "[3] CONSEGUIR IP DE UN DOMINIO")
     print(Fore.GREEN + "[4] CANAL DE KRYSSI$")
-    print("")
+    print(Fore.GREEN + "[5] TIK TOK DE LETAL NET")
 
     menu = input(Fore.WHITE + "Inserte una opción >> ")
 
@@ -134,7 +134,8 @@ def main():
 
     if menu == "5":
 
-        webbrowser.open()
+        webbrowser.open(
+            "https://www.tiktok.com/@letalnet?lang=es&is_copy_url=1&is_from_webapp=v1", new=2, autoraise=True)
         os.system("cls")
         main()
 
