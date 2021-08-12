@@ -35,7 +35,7 @@ def main():
     print(Fore.GREEN + "[2] TIK TOK DE LETAL NET")
     print(Fore.GREEN + "[3] CONSEGUIR IP DE UN DOMINIO")
     print(Fore.GREEN + "[4] GEOLOCALIZACIÓN POR IP")
-    print(Fore.GREEN + "[5] ")
+    print(Fore.GREEN + "[5] SUMA DE NUMEROS")
     print(Fore.GREEN + "[6] GEN + CHECKER DE NITRO")
 
     menu = input(Fore.WHITE + "Inserte una opción >> ")
@@ -111,9 +111,9 @@ def main():
         numero2 = input(
             Fore.MAGENTA + "[Letal Net TOOL] Introduzca el siguiente numero >> ")
 
-        res = numero1 + numero2
+        res = int(numero1) + int(numero2)
 
-        print("El resultado es: " + res)
+        print("El resultado es: ", + res)
         print('\n')
         
         menudas = input(Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
