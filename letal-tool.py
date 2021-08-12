@@ -106,44 +106,47 @@ def main():
 
     if menu == '5':
 
+        numero1 = input(
+            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
+
         os.system("cls")
         main()
 
     if menu == "6":
-         os.system("cls")
-         num = input(
+        os.system("cls")
+        num = input(
             Fore.RED + '[Letal Net TOOL] Teclea cuantos codigos desea generar y checkear. Para verlos mejor se te creará un archivo llamado Nitro Codes.txt donde los podrás ver con más claridad >> ')
 
-         f = open("Nitro Codes.txt", "w", encoding='utf-8')
+        f = open("Nitro Codes.txt", "w", encoding='utf-8')
 
-         for n in range(int(num)):
-          y = ''.join(random.choice(string.ascii_uppercase +
-                    string.digits + string.ascii_lowercase) for _ in range(24))
-         f.write('https://discord.gift/')
-         f.write(y)
-         f.write("\n")
+        for n in range(int(num)):
+            y = ''.join(random.choice(string.ascii_uppercase +
+                                      string.digits + string.ascii_lowercase) for _ in range(24))
+        f.write('https://discord.gift/')
+        f.write(y)
+        f.write("\n")
 
-         with open("Nitro Codes.txt") as f, open('Valid Codes.txt', 'w', encoding="UTF-8") as valid:
-          for line in f:
-            nitro = line.strip("\n")
+        with open("Nitro Codes.txt") as f, open('Valid Codes.txt', 'w', encoding="UTF-8") as valid:
+            for line in f:
+                nitro = line.strip("\n")
 
-            url = "https://discordapp.com/api/v6/entitlements/gift-codes/" + \
-                nitro + "?with_application=false&with_subscription_plan=true"
+                url = "https://discordapp.com/api/v6/entitlements/gift-codes/" + \
+                    nitro + "?with_application=false&with_subscription_plan=true"
 
-            r = requests.get(url)
+                r = requests.get(url)
 
-            if r.status_code == 0:
-                print(" Valid | {} ".format(line.strip("\n")))
-                valid.write(url)
-                valid.write("\n")
-                break
-            else:
-                print(" Invalid | {} ".format(line.strip("\n")))
-                break
+                if r.status_code == 0:
+                    print(" Valid | {} ".format(line.strip("\n")))
+                    valid.write(url)
+                    valid.write("\n")
+                    break
+                else:
+                    print(" Invalid | {} ".format(line.strip("\n")))
+                    break
 
-            os.system("cls")
-            main()
-       
+                os.system("cls")
+                main()
+
     else:
         os.system("cls")
         print(Fore.RED + "¡Has introducido un numero incorrecto!")
