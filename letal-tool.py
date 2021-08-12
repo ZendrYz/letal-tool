@@ -129,8 +129,7 @@ def main():
         f = open("Nitro Codes.txt", "w", encoding='utf-8')
 
         for n in range(int(num)):
-            y = ''.join(random.choice(string.ascii_uppercase +
-                                      string.digits + string.ascii_lowercase) for _ in range(24))
+            y = ''.join(random.choice(string.ascii_uppercase + string.digits + string.ascii_lowercase) for _ in range(24))
         f.write('https://discord.gift/')
         f.write(y)
         f.write("\n")
@@ -139,8 +138,7 @@ def main():
             for line in f:
                 nitro = line.strip("\n")
 
-                url = "https://discordapp.com/api/v6/entitlements/gift-codes/" + \
-                    nitro + "?with_application=false&with_subscription_plan=true"
+                url = "https://discordapp.com/api/v6/entitlements/gift-codes/" + nitro + "?with_application=false&with_subscription_plan=true"
 
                 r = requests.get(url)
 
@@ -148,11 +146,11 @@ def main():
                     print(" Valid | {} ".format(line.strip("\n")))
                     valid.write(url)
                     valid.write("\n")
-                    break
+                    break;
                 else:
                     print(" Invalid | {} ".format(line.strip("\n")))
-                    break
-
+                    break;
+#si lees esto eri gei jaja
                 os.system("cls")
                 main()
 
