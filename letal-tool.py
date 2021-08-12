@@ -105,9 +105,18 @@ def main():
         main()
 
     if menu == '5':
-
+        os.system("cls")
         numero1 = input(
             Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
+        numero2 = input(
+            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el siguiente numero >> ")
+
+        res = numero1 + numero2
+
+        print("El resultado es: " + res)
+        print('\n')
+        
+        menudas = input(Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
 
         os.system("cls")
         main()
