@@ -135,9 +135,8 @@ def main():
                 print(" Invalid | {} ".format(line.strip("\n")))
                 break
 
-                os.system("cls")
-
-                main()
+            os.system("cls")
+            main()
        
     else:
         os.system("cls")
