@@ -36,7 +36,10 @@ def main():
     print(Fore.GREEN + "[3] CONSEGUIR IP DE UN DOMINIO")
     print(Fore.GREEN + "[4] GEOLOCALIZACIÓN POR IP")
     print(Fore.GREEN + "[5] SUMA DE NUMEROS")
-    print(Fore.GREEN + "[6] GEN + CHECKER DE NITRO")
+    print(Fore.GREEN + "[6] RESTA DE NUMEROS")
+    print(Fore.GREEN + "[7] MULTIPLICACIÓN DE NUMEROS")
+    print(Fore.GREEN + "[8] DIVISÓN DE NUMEROS")
+    print(Fore.GREEN + "[9] GEN + CHECKER DE NITRO")
 
     menu = input(Fore.WHITE + "Inserte una opción >> ")
 
@@ -122,6 +125,58 @@ def main():
         main()
 
     if menu == "6":
+        os.system("cls")
+        numero1 = input(
+            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
+        numero2 = input(
+            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el siguiente numero >> ")
+
+        res = int(numero1) - int(numero2)
+
+        print("El resultado es: ", + res)
+        print('\n')
+        
+        menudas = input(Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
+
+        os.system("cls")
+        main()
+
+    if menu == "7":
+        os.system("cls")
+        numero1 = input(
+            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
+        numero2 = input(
+            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el siguiente numero >> ")
+
+        res = int(numero1) * int(numero2)
+
+        print("El resultado es: ", + res)
+        print('\n')
+        
+        menudas = input(Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
+
+        os.system("cls")
+        main()
+
+    if menu == "8":
+        os.system("cls")
+        numero1 = input(
+            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
+        numero2 = input(
+            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el siguiente numero >> ")
+
+        res = int(numero1) / int(numero2)
+
+        print("El resultado es: ", + res)
+        print('\n')
+        
+        menudas = input(Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
+
+        os.system("cls")
+        main()
+
+
+    if menu == "9":
         os.system("cls")
         num = input(
             Fore.RED + '[Letal Net TOOL] Teclea cuantos codigos desea generar y checkear. Para verlos mejor se te creará un archivo llamado Nitro Codes.txt donde los podrás ver con más claridad >> ')
