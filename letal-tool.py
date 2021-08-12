@@ -41,6 +41,7 @@ def main():
     print(Fore.GREEN + "[8] MULTIPLICACIÓN DE NUMEROS")
     print(Fore.GREEN + "[9] DIVISÓN DE NUMEROS")
     print(Fore.GREEN + "[10] GEN + CHECKER DE NITRO")
+    print()
 
     menu = input(Fore.WHITE + "Inserte una opción >> ")
 
@@ -60,7 +61,7 @@ def main():
 
     if menu == "3":
 
-        webbrowser.open("https://discord.gg/xXbyXNX9Qj")
+        webbrowser.open("https://discord.gg/73pcu7B7V2", new=2, autoraise=True)
 
         os.system("cls")
         main()
@@ -126,8 +127,9 @@ def main():
 
         print("El resultado es: ", + res)
         print('\n')
-        
-        menudas = input(Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
+
+        menudas = input(
+            Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
 
         os.system("cls")
         main()
@@ -143,8 +145,9 @@ def main():
 
         print("El resultado es: ", + res)
         print('\n')
-        
-        menudas = input(Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
+
+        menudas = input(
+            Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
 
         os.system("cls")
         main()
@@ -160,8 +163,9 @@ def main():
 
         print("El resultado es: ", + res)
         print('\n')
-        
-        menudas = input(Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
+
+        menudas = input(
+            Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
 
         os.system("cls")
         main()
@@ -177,12 +181,12 @@ def main():
 
         print("El resultado es: ", + res)
         print('\n')
-        
-        menudas = input(Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
+
+        menudas = input(
+            Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
 
         os.system("cls")
         main()
-
 
     if menu == "10":
         os.system("cls")
@@ -192,7 +196,8 @@ def main():
         f = open("Nitro Codes.txt", "w", encoding='utf-8')
 
         for n in range(int(num)):
-            y = ''.join(random.choice(string.ascii_uppercase + string.digits + string.ascii_lowercase) for _ in range(24))
+            y = ''.join(random.choice(string.ascii_uppercase +
+                        string.digits + string.ascii_lowercase) for _ in range(24))
         f.write('https://discord.gift/')
         f.write(y)
         f.write("\n")
@@ -201,7 +206,8 @@ def main():
             for line in f:
                 nitro = line.strip("\n")
 
-                url = "https://discordapp.com/api/v6/entitlements/gift-codes/" + nitro + "?with_application=false&with_subscription_plan=true"
+                url = "https://discordapp.com/api/v6/entitlements/gift-codes/" + \
+                    nitro + "?with_application=false&with_subscription_plan=true"
 
                 r = requests.get(url)
 
@@ -209,11 +215,11 @@ def main():
                     print(" Valid | {} ".format(line.strip("\n")))
                     valid.write(url)
                     valid.write("\n")
-                    break;
+                    break
                 else:
                     print(" Invalid | {} ".format(line.strip("\n")))
-                    break;
-#si lees esto eri gei jaja
+                    break
+# si lees esto eri gei jaja
                 os.system("cls")
                 main()
 
