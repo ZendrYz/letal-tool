@@ -35,7 +35,8 @@ def main():
     print(Fore.GREEN + "[2] TIK TOK DE LETAL NET")
     print(Fore.GREEN + "[3] CONSEGUIR IP DE UN DOMINIO")
     print(Fore.GREEN + "[4] GEOLOCALIZACIÓN POR IP")
-    print(Fore.GREEN + "[5] GEN + CHECKER DE NITRO")
+    print(Fore.GREEN + "[5] ")
+    print(Fore.GREEN + "[6] GEN + CHECKER DE NITRO")
 
     menu = input(Fore.WHITE + "Inserte una opción >> ")
 
@@ -103,7 +104,12 @@ def main():
         os.system("cls")
         main()
 
-    if menu == "5":
+    if menu == '5':
+
+        os.system("cls")
+        main()
+
+    if menu == "6":
          os.system("cls")
          num = input(
             Fore.RED + '[Letal Net TOOL] Teclea cuantos codigos desea generar y checkear. Para verlos mejor se te creará un archivo llamado Nitro Codes.txt donde los podrás ver con más claridad >> ')
