@@ -33,13 +33,14 @@ def main():
     print()
     print(Fore.GREEN + "[1] CANAL DE KRYSSI$")
     print(Fore.GREEN + "[2] TIK TOK DE LETAL NET")
-    print(Fore.GREEN + "[3] CONSEGUIR IP DE UN DOMINIO")
-    print(Fore.GREEN + "[4] GEOLOCALIZACIÓN POR IP")
-    print(Fore.GREEN + "[5] SUMA DE NUMEROS")
-    print(Fore.GREEN + "[6] RESTA DE NUMEROS")
-    print(Fore.GREEN + "[7] MULTIPLICACIÓN DE NUMEROS")
-    print(Fore.GREEN + "[8] DIVISÓN DE NUMEROS")
-    print(Fore.GREEN + "[9] GEN + CHECKER DE NITRO")
+    print(Fore.GREEN + "[3] DISCORD DE LETAL NET")
+    print(Fore.GREEN + "[4] CONSEGUIR IP DE UN DOMINIO")
+    print(Fore.GREEN + "[5] GEOLOCALIZACIÓN POR IP")
+    print(Fore.GREEN + "[6] SUMA DE NUMEROS")
+    print(Fore.GREEN + "[7] RESTA DE NUMEROS")
+    print(Fore.GREEN + "[8] MULTIPLICACIÓN DE NUMEROS")
+    print(Fore.GREEN + "[9] DIVISÓN DE NUMEROS")
+    print(Fore.GREEN + "[10] GEN + CHECKER DE NITRO")
 
     menu = input(Fore.WHITE + "Inserte una opción >> ")
 
@@ -59,6 +60,13 @@ def main():
 
     if menu == "3":
 
+        webbrowser.open("https://discord.gg/xXbyXNX9Qj")
+
+        os.system("cls")
+        main()
+
+    if menu == "4":
+
         os.system("cls")
         ip2 = input(
             Fore.RED + "[Letal Net TOOL] Inserte aqui la URL de la web >> " + Fore.GREEN)
@@ -75,7 +83,7 @@ def main():
 
         main()
 
-    if menu == "4":
+    if menu == "5":
 
         os.system("cls")
 
@@ -107,7 +115,7 @@ def main():
         os.system("cls")
         main()
 
-    if menu == '5':
+    if menu == '6':
         os.system("cls")
         numero1 = input(
             Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
@@ -124,7 +132,7 @@ def main():
         os.system("cls")
         main()
 
-    if menu == "6":
+    if menu == "7":
         os.system("cls")
         numero1 = input(
             Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
@@ -141,7 +149,7 @@ def main():
         os.system("cls")
         main()
 
-    if menu == "7":
+    if menu == "8":
         os.system("cls")
         numero1 = input(
             Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
@@ -158,7 +166,7 @@ def main():
         os.system("cls")
         main()
 
-    if menu == "8":
+    if menu == "9":
         os.system("cls")
         numero1 = input(
             Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
@@ -176,7 +184,7 @@ def main():
         main()
 
 
-    if menu == "9":
+    if menu == "10":
         os.system("cls")
         num = input(
             Fore.RED + '[Letal Net TOOL] Teclea cuantos codigos desea generar y checkear. Para verlos mejor se te creará un archivo llamado Nitro Codes.txt donde los podrás ver con más claridad >> ')
