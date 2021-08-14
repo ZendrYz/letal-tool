@@ -9,12 +9,14 @@ import random
 import string
 import requests
 import random
+import ctypes
 import socket
 
 
 os.system("cls")
 
-# ctypes.windll.kernel32.SetConsoleTitle("Tool de Letal Net")
+ctypes.windll.kernel32.SetConsoleTitleW("Tool de Letal Net")
+
 
 
 def main():
@@ -34,13 +36,14 @@ def main():
     print(Fore.GREEN + "[1] CANAL DE KRYSSI$")
     print(Fore.GREEN + "[2] TIK TOK DE LETAL NET")
     print(Fore.GREEN + "[3] DISCORD DE LETAL NET")
-    print(Fore.GREEN + "[4] CONSEGUIR IP DE UN DOMINIO")
-    print(Fore.GREEN + "[5] GEOLOCALIZACIÓN POR IP")
-    print(Fore.GREEN + "[6] SUMA DE NUMEROS")
-    print(Fore.GREEN + "[7] RESTA DE NUMEROS")
-    print(Fore.GREEN + "[8] MULTIPLICACIÓN DE NUMEROS")
-    print(Fore.GREEN + "[9] DIVISÓN DE NUMEROS")
-    print(Fore.GREEN + "[10] GEN + CHECKER DE NITRO")
+    print(Fore.GREEN + "[4] SCAN DE SUBDOMINIOS")
+    print(Fore.GREEN + "[5] CONSEGUIR IP DE UN DOMINIO")
+    print(Fore.GREEN + "[6] GEOLOCALIZACIÓN POR IP")
+    print(Fore.GREEN + "[7] SUMA DE NUMEROS")
+    print(Fore.GREEN + "[8] RESTA DE NUMEROS")
+    print(Fore.GREEN + "[9] MULTIPLICACIÓN DE NUMEROS")
+    print(Fore.GREEN + "[10] DIVISÓN DE NUMEROS")
+    print(Fore.GREEN + "[11] GEN + CHECKER DE NITRO")
     print()
 
     menu = input(Fore.WHITE + "Inserte una opción >> ")
@@ -67,6 +70,24 @@ def main():
         main()
 
     if menu == "4":
+        os.system("cls")
+
+        print()
+        print() 
+        subdomains0 = ["www", "ovh-birdmc", "cpanel", "ns-vps", "d", "t", "short", "jar", "iptables", "ufw", "recuperar", "baneados", "imagenes", "samp", "social", "holo", "donaciones", "shoprp", "wow", "multicraft", "mail", "radio3", "radio2", "fr", "teamdub", "serieyt", "shop", "report", "apply", "youtube", "twitter", "st", "lost", "sg", "srvc1", "srvc1", "torneo", "serv11", "serv0", "serv10", "serv9", "serv7", "serv6", "serv5", "serv4", "serv3", "serv2", "serv1", "serv", "mcp", "paysafe", "mu", "radio", "donate", "vps03", "vps02", "vps01", "xenon", "radio", "bans", "ns2", "ns1", "donar", "radio", "new", "appeals", "reports", "translations", "marketing", "staff", "bugs", "help", "render", "foro", "ts3", "git", "analytics", "coins", "votos", "docker-main", "docker", "main", "server3", "cdn", "server2", "creativo", "yt2", "yt", "factions", "solder", "test1", "test001", "testpene", "test", "panel", "apolo", "sv3", "sv2", "sv1", "backups", "zeus", "thor", "vps", "web", "dev", "tv", "deposito", "depositos", "extra", "extras", "bungee1", "torneoyt", "hcf", "uhc5", "uhc4", "uhc3", "uhc2", "uhc1", "uhc", "dedicado5", "dedicado4", "dedicado3", "dedicado2", "ded5", "ded4", "ded3", "ded2", "ded1", "ded", "gamehitodrh", "servidor4", "webmail", "monitor", "servidor001", "servidor10", "servidor9", "servidor8", "servidor7", "servidor6", "servidor5", "servidor4", "servidor3", "hvokfcic7sm", "autodiscover", "tauchet", "hg10", "ping", "hg9", "hg8", "hg7", "hg6", "hg5", "hg4", "hg3", "hg2", "hg1", "tienda", "status", "ayuda", "playstation", "home", "job", "firewall", "rank", "mantenimiento", "beta", "pay", "private", "port", "bb", "stor", "mx5", "serieyt", "shop", "report", "apply", "youtube", "twitter", "st", "lost", "sg", "srvc1", "srvc1", "torneo", "serv11", "serv0", "serv10", "serv9", "serv7", "serv6", "serv5", "serv4", "serv3", "serv2", "serv1", "serv", "mcp", "paysafe", "mu", "radio", "donate", "vps03", "vps02", "vps01", "xenon", "radio", "bans", "ns2", "ns1", "donar", "radio", "new", "translations", "staff", "help", "render", "ts3", "git", "analytics", "coins", "votos", "docker-main", "main", "server3", "server2", "creativo", "yt2", "yt", "factions", "solder", "test1", "test001", "testpene", "test", "panel", "sv3", "sv2", "sv1",  "vps", "build", "web", "dev", "mc", "play", "sys", "node1", "node2", "node3", "node4", "node5", "node6", "node7", "node8", "node9", "node10", "node11", "node12", "node13", "node14", "node15", "node16", "node17", "node18", "node19", "node20", "node001", "node002", "node01", "node02", "node003", "sys001", "sys002", "go", "admin", "eggwars", "bedwars", "lobby1", "hub", "builder", "developer", "test", "test1", "forum", "bans", "baneos", "ts", "ts3", "sys1", "sys2", "mods", "bungee", "bungeecord", "array", "spawn", "server", "client", "api", "smtp", "s1", "s2", "s3", "s4", "server1", "server2", "jugar", "login", "mysql", "phpmyadmin", "demo", "na", "eu", "us", "es", "fr", "it", "ru", "support", "developing", "discord", "backup", "buy", "buycraft", "go", "dedicado1", "dedi", "dedi1", "dedi2", "dedi3", "minecraft", "prueba", "pruebas", "ping", "register", "stats", "store", "serie", "buildteam", "info", "host", "jogar", "proxy", "vps", "ovh", "partner", "partners", "appeal", "store-assets", "builds", "testing", "server", "pvp", "skywars", "survival", "skyblock", "lobby", "hg", "games", "sys001", "sys002", "node001", "node002", "games001", "games002", "game001", "game002", "game003", "sys001", "us72", "us1", "us2", "us3", "us4", "us5", "goliathdev", "staticassets", "rewards", "rpsrv", "ftp", "ssh", "web", "jobs", "hcf", "grafana", "vote2", "file", "sentry", "enjin", "webserver", "xen", "mco", "monitor", "servidor2", "sadre", "gamehitodrh", "ts"]
+        victima0 = input (Fore.RED + "[SUBDOMAINS TOOL] Inserte el dominio >> " + "" + Fore.GREEN+"")
+        print()   
+        for ejecutar0 in subdomains0:
+            ipserver0 = str(ejecutar0)+"."+str(victima0)
+            iphost0 = socket.gethostname(str(ipserver0))
+            print(Fore.MAGENTA+"[Letal Net TOOL] (21) Subdominios encontrados >> "+Fore.CYAN+""+str(ejecutar0)+"."+str(victima0)+" >> "+Fore.YELLOW+""+str(iphost0))
+
+        menu2332 = input(Fore.WHITE + "El scan de subdomains a finalizado, presione intro para volver al menu...")
+
+        os.system("cls")
+        main()
+
+    if menu == "5":
 
         os.system("cls")
         ip2 = input(
@@ -84,7 +105,7 @@ def main():
 
         main()
 
-    if menu == "5":
+    if menu == "6":
 
         os.system("cls")
 
@@ -116,7 +137,7 @@ def main():
         os.system("cls")
         main()
 
-    if menu == '6':
+    if menu == '7':
         os.system("cls")
         numero1 = input(
             Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
@@ -134,7 +155,7 @@ def main():
         os.system("cls")
         main()
 
-    if menu == "7":
+    if menu == "8":
         os.system("cls")
         numero1 = input(
             Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
@@ -152,7 +173,7 @@ def main():
         os.system("cls")
         main()
 
-    if menu == "8":
+    if menu == "9":
         os.system("cls")
         numero1 = input(
             Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
@@ -170,7 +191,7 @@ def main():
         os.system("cls")
         main()
 
-    if menu == "9":
+    if menu == "10":
         os.system("cls")
         numero1 = input(
             Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
@@ -188,7 +209,7 @@ def main():
         os.system("cls")
         main()
 
-    if menu == "10":
+    if menu == "11":
         os.system("cls")
         num = input(
             Fore.RED + '[Letal Net TOOL] Teclea cuantos codigos desea generar y checkear. Para verlos mejor se te creará un archivo llamado Nitro Codes.txt donde los podrás ver con más claridad >> ')
