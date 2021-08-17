@@ -142,10 +142,9 @@ def main():
 
     if menu == '7':
         os.system("cls")
-        numero1 = input(
-            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
-        numero2 = input(
-            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el siguiente numero >> ")
+        numero1 = input(Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
+
+        numero2 = input(Fore.MAGENTA + "[Letal Net TOOL] Introduzca el siguiente numero >> ")
 
         res = int(numero1) + int(numero2)
 
