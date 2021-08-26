@@ -12,13 +12,30 @@ import random
 import ctypes
 import socket
 
-
 os.system("cls")
 
 ctypes.windll.kernel32.SetConsoleTitleW("Tool de Letal Net")
 
+b = "\033[1;34m"
+d = "\033[2;37m"
+w = "\033[0m"
+
 
 def main():
+    print(w+d+"      ,,                ,,")
+    print(w+d+"    (((((              )))))")
+    print(w+d+"   ((((((              ))))))")
+    print(w+d+"   ((((((              ))))))")
+    print(w+d+"    ((((("+w+b+"\033[1;31m@@@@@@@@@@@@"+w+d+")))))")
+    print(w+d+"      ((("+w+b+"@@@@@@@@@@@@@@@@"+w+d+")))    "+w+b+"Letal Tool - version 1.1")
+    print(w+b+"      \@@/"+"\033[1;31m"+",:::,"+w+b+"\/"+"\033[1;31m"+",:::,"+w+b+"\@@       "+w+"------------------")
+    print(w+b+"     /@@@|"+"\033[1;31m"+":::::"+w+b+"||"+"\033[1;31m"+":::::"+w+b+"|@@@\\     "+w+"Author by "+"\033[1;33m"+"@ZendrYz")
+    print(w+b+"    / @@@\\"+"\033[1;31m"+"':::'"+w+b+"/\\"+"\033[1;31m"+"':::'"+w+b+"/@@@ \\    "+w+"")
+    print(w+b+"   /  /@@@@@@@//\\\@@@@@@@\  \\   "+w+"")
+    print(w+b+"  (  /  '@@@@@====@@@@@'  \  )  "+w+"")
+    print(w+b+"   \(     /          \     )/")
+    print(w+b+"     \   (            )   /")
+    print(w+b+"          \          /"+w)
     print(Fore.BLUE + """
                              #LetalNet               
   _         _        _   _   _      _   
@@ -26,11 +43,9 @@ def main():
  | |   / _ \ __/ _` | | |  \| |/ _ \ __|
  | |__|  __/ || (_| | | | |\  |  __/ |_ 
  |_____\___|\__\__,_|_| |_| \_|\___|\__|
-                                        
+                            
 """)
 
-    print(Fore.WHITE + "Tool de Letal Net")
-    print(Fore.WHITE + "Versión 1.1 | Coded by ZendrYz")
     print()
     print(Fore.GREEN + "[1] CANAL DE KRYSSI$")
     print(Fore.GREEN + "[2] TIK TOK DE LETAL NET")
@@ -142,9 +157,11 @@ def main():
 
     if menu == '7':
         os.system("cls")
-        numero1 = input(Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
+        numero1 = input(
+            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
 
-        numero2 = input(Fore.MAGENTA + "[Letal Net TOOL] Introduzca el siguiente numero >> ")
+        numero2 = input(
+            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el siguiente numero >> ")
 
         res = int(numero1) + int(numero2)
 
