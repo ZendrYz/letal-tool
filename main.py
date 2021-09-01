@@ -9,12 +9,10 @@ import random
 import string
 import requests
 import random
-import ctypes
 import socket
 
 os.system("cls")
 
-ctypes.windll.kernel32.SetConsoleTitleW("Tool de Letal Net")
 
 b = "\033[1;34m"
 d = "\033[2;37m"
