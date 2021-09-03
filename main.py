@@ -25,23 +25,27 @@ def main():
     print(w+d+"   ((((((              ))))))")
     print(w+d+"   ((((((              ))))))")
     print(w+d+"    ((((("+w+b+"\033[1;31m@@@@@@@@@@@@"+w+d+")))))")
-    print(w+d+"      ((("+w+b+"@@@@@@@@@@@@@@@@"+w+d+")))    "+w+b+"Letal Tool - version 1.1")
-    print(w+b+"      \@@/"+"\033[1;31m"+",:::,"+w+b+"\/"+"\033[1;31m"+",:::,"+w+b+"\@@       "+w+"------------------")
-    print(w+b+"     /@@@|"+"\033[1;31m"+":::::"+w+b+"||"+"\033[1;31m"+":::::"+w+b+"|@@@\\     "+w+"Author by "+"\033[1;33m"+"@ZendrYz")
-    print(w+b+"    / @@@\\"+"\033[1;31m"+"':::'"+w+b+"/\\"+"\033[1;31m"+"':::'"+w+b+"/@@@ \\    "+w+"")
+    print(w+d+"      ((("+w+b+"@@@@@@@@@@@@@@@@"+w+d+")))    " +
+          w+b+"Letal Tool - version 1.1")
+    print(w+b+"      \@@/"+"\033[1;31m"+",:::,"+w+b+"\/" +
+          "\033[1;31m"+",:::,"+w+b+"\@@       "+w+"------------------")
+    print(w+b+"     /@@@|"+"\033[1;31m"+":::::"+w+b+"||"+"\033[1;31m" +
+          ":::::"+w+b+"|@@@\\     "+w+"Author by "+"\033[1;33m"+"@ZendrYz")
+    print(w+b+"    / @@@\\"+"\033[1;31m"+"':::'"+w+b +
+          "/\\"+"\033[1;31m"+"':::'"+w+b+"/@@@ \\    "+w+"")
     print(w+b+"   /  /@@@@@@@//\\\@@@@@@@\  \\   "+w+"")
     print(w+b+"  (  /  '@@@@@====@@@@@'  \  )  "+w+"")
     print(w+b+"   \(     /          \     )/")
     print(w+b+"     \   (            )   /")
     print(w+b+"          \          /"+w)
     print(Fore.BLUE + """
-                             #LetalNet               
-  _         _        _   _   _      _   
- | |    ___| |_ __ _| | | \ | | ___| |_ 
+                             #LetalNet
+  _         _        _   _   _      _
+ | |    ___| |_ __ _| | | \ | | ___| |_
  | |   / _ \ __/ _` | | |  \| |/ _ \ __|
- | |__|  __/ || (_| | | | |\  |  __/ |_ 
+ | |__|  __/ || (_| | | | |\  |  __/ |_
  |_____\___|\__\__,_|_| |_| \_|\___|\__|
-                            
+
 """)
 
     print()
@@ -120,7 +124,7 @@ def main():
         os.system("cls")
 
         main()
-
+# se te escucha como el orto
     if menu == "6":
 
         os.system("cls")
@@ -235,10 +239,11 @@ def main():
 
         for n in range(int(num)):
             y = ''.join(random.choice(string.ascii_uppercase +
-                        string.digits + string.ascii_lowercase) for _ in range(24))
-        f.write('https://discord.gift/')
-        f.write(y)
-        f.write("\n")
+                                      string.digits + string.ascii_lowercase) for _ in range(24))
+            f.write('https://discord.gift/')
+            f.write(y)
+            f.write("\n")
+            os.system("cls")
 
         with open("Nitro Codes.txt") as f, open('Valid Codes.txt', 'w', encoding="UTF-8") as valid:
             for line in f:
@@ -253,13 +258,14 @@ def main():
                     print(" Valid | {} ".format(line.strip("\n")))
                     valid.write(url)
                     valid.write("\n")
-                    break
+
                 else:
-                    print(" Invalid | {} ".format(line.strip("\n")))
-                    break
-# si lees esto eri gei jaja
-                os.system("cls")
-                main()
+                    menu3424 = input(
+                        Fore.WHITE + "Los codigos fueron generados correctamente en el archivo Nitro Codes.txt. Presione la tecla intro para volver al menú...")
+
+                    os.system("cls")
+
+                    main()
 
     else:
         os.system("cls")
