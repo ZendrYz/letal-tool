@@ -1,6 +1,7 @@
 #########################IMPORTS###############################
 import os
-from colorama import Fore
+from colorama import Fore, init
+from difflib import SequenceMatcher
 from urllib.request import urlopen
 import json
 import socket
@@ -10,6 +11,9 @@ import string
 import requests
 import random
 import socket
+import re
+import json
+from urllib.request import Request, urlopen
 
 os.system("cls")
 
@@ -20,26 +24,24 @@ w = "\033[0m"
 
 
 def main():
+
+
     print(w+d+"      ,,                ,,")
     print(w+d+"    (((((              )))))")
     print(w+d+"   ((((((              ))))))")
     print(w+d+"   ((((((              ))))))")
     print(w+d+"    ((((("+w+b+"\033[1;31m@@@@@@@@@@@@"+w+d+")))))")
-    print(w+d+"      ((("+w+b+"@@@@@@@@@@@@@@@@"+w+d+")))    " +
-          w+b+"Letal Tool - version 1.1")
-    print(w+b+"      \@@/"+"\033[1;31m"+",:::,"+w+b+"\/" +
-          "\033[1;31m"+",:::,"+w+b+"\@@       "+w+"------------------")
-    print(w+b+"     /@@@|"+"\033[1;31m"+":::::"+w+b+"||"+"\033[1;31m" +
-          ":::::"+w+b+"|@@@\\     "+w+"Author by "+"\033[1;33m"+"@ZendrYz")
-    print(w+b+"    / @@@\\"+"\033[1;31m"+"':::'"+w+b +
-          "/\\"+"\033[1;31m"+"':::'"+w+b+"/@@@ \\    "+w+"")
+    print(w+d+"      ((("+w+b+"@@@@@@@@@@@@@@@@"+w+d+")))    " +w+b+"Letal Tool - version 1.1")
+    print(w+b+"      \@@/"+"\033[1;31m"+",:::,"+w+b+"\/" +"\033[1;31m"+",:::,"+w+b+"\@@       "+w+"------------------")
+    print(w+b+"     /@@@|"+"\033[1;31m"+":::::"+w+b+"||"+"\033[1;31m" +":::::"+w+b+"|@@@\\     "+w+"Author by "+"\033[1;33m"+"@ZendrYz")
+    print(w+b+"    / @@@\\"+"\033[1;31m"+"':::'"+w+b +"/\\"+"\033[1;31m"+"':::'"+w+b+"/@@@ \\    "+w+"")
     print(w+b+"   /  /@@@@@@@//\\\@@@@@@@\  \\   "+w+"")
     print(w+b+"  (  /  '@@@@@====@@@@@'  \  )  "+w+"")
     print(w+b+"   \(     /          \     )/")
     print(w+b+"     \   (            )   /")
     print(w+b+"          \          /"+w)
     print(Fore.BLUE + """
-                             #LetalNet
+                             # LetalNet
   _         _        _   _   _      _
  | |    ___| |_ __ _| | | \ | | ___| |_
  | |   / _ \ __/ _` | | |  \| |/ _ \ __|
