@@ -1,7 +1,6 @@
 #########################IMPORTS###############################
 import os
 from colorama import Fore, init
-from difflib import SequenceMatcher
 from urllib.request import urlopen
 import json
 import socket
@@ -11,35 +10,33 @@ import string
 import requests
 import random
 import socket
-import re
+from colorama import Fore, init
 import json
-from urllib.request import Request, urlopen
-
-os.system("cls")
-
+from urllib.request import urlopen
 
 b = "\033[1;34m"
 d = "\033[2;37m"
 w = "\033[0m"
 
 
+    #   print(w+d+"      ,,                ,,")
+    #   print(w+d+"    (((((              )))))")
+    #   print(w+d+"   ((((((              ))))))")
+    #   print(w+d+"   ((((((              ))))))")
+    #   print(w+d+"    ((((("+w+b+"\033[1;31m@@@@@@@@@@@@"+w+d+")))))")
+    #   print(w+d+"      ((("+w+b+"@@@@@@@@@@@@@@@@"+w+d+")))    " +w+b+"Letal Tool - version 1.1")
+    #   print(w+b+"      \@@/"+"\033[1;31m"+",:::,"+w+b+"\/" +"\033[1;31m"+",:::,"+w+b+"\@@       "+w+"------------------")
+    #   print(w+b+"     /@@@|"+"\033[1;31m"+":::::"+w+b+"||"+"\033[1;31m" +":::::"+w+b+"|@@@\\     "+w+"Author by "+"\033[1;33m"+"@ZendrYz")
+    #   print(w+b+"    / @@@\\"+"\033[1;31m"+"':::'"+w+b +"/\\"+"\033[1;31m"+"':::'"+w+b+"/@@@ \\    "+w+"")
+    #   print(w+b+"   /  /@@@@@@@//\\\@@@@@@@\  \\   "+w+"")
+    #   print(w+b+"  (  /  '@@@@@====@@@@@'  \  )  "+w+"")
+    #   print(w+b+"   \(     /          \     )/")
+    #   print(w+b+"     \   (            )   /")
+    #   print(w+b+"          \          /"+w)
+
+os.system("cls")
 def main():
 
-
-#   print(w+d+"      ,,                ,,")
-#   print(w+d+"    (((((              )))))")
-#   print(w+d+"   ((((((              ))))))")
-#   print(w+d+"   ((((((              ))))))")
-#   print(w+d+"    ((((("+w+b+"\033[1;31m@@@@@@@@@@@@"+w+d+")))))")
-#   print(w+d+"      ((("+w+b+"@@@@@@@@@@@@@@@@"+w+d+")))    " +w+b+"Letal Tool - version 1.1")
-#   print(w+b+"      \@@/"+"\033[1;31m"+",:::,"+w+b+"\/" +"\033[1;31m"+",:::,"+w+b+"\@@       "+w+"------------------")
-#   print(w+b+"     /@@@|"+"\033[1;31m"+":::::"+w+b+"||"+"\033[1;31m" +":::::"+w+b+"|@@@\\     "+w+"Author by "+"\033[1;33m"+"@ZendrYz")
-#   print(w+b+"    / @@@\\"+"\033[1;31m"+"':::'"+w+b +"/\\"+"\033[1;31m"+"':::'"+w+b+"/@@@ \\    "+w+"")
-#   print(w+b+"   /  /@@@@@@@//\\\@@@@@@@\  \\   "+w+"")
-#   print(w+b+"  (  /  '@@@@@====@@@@@'  \  )  "+w+"")
-#   print(w+b+"   \(     /          \     )/")
-#   print(w+b+"     \   (            )   /")
-#   print(w+b+"          \          /"+w)
     print("""
                                           #@@                                                                                          @@#                                          
                                           @@@@                                                                                          @@@@                                         
@@ -340,7 +337,7 @@ def main():
         os.system("cls")
 
         main()
-# se te escucha como el orto
+
     if menu == "6":
 
         os.system("cls")
@@ -489,11 +486,6 @@ def main():
         print()
         menu22331 = input(
             Fore.WHITE + "Presiona la tecla intro para volver al menu...")
-
-        os.system("cls")
-
-        main()
-
 
 os.system("cls")
 main()
