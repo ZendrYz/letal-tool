@@ -1,0 +1,5 @@
+main-py.spec
+main.spec
+pyinstaller.exe
+build
+dist

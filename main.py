@@ -18,23 +18,24 @@ b = "\033[1;34m"
 d = "\033[2;37m"
 w = "\033[0m"
 
-
-    #   print(w+d+"      ,,                ,,")
-    #   print(w+d+"    (((((              )))))")
-    #   print(w+d+"   ((((((              ))))))")
-    #   print(w+d+"   ((((((              ))))))")
-    #   print(w+d+"    ((((("+w+b+"\033[1;31m@@@@@@@@@@@@"+w+d+")))))")
-    #   print(w+d+"      ((("+w+b+"@@@@@@@@@@@@@@@@"+w+d+")))    " +w+b+"Letal Tool - version 1.1")
-    #   print(w+b+"      \@@/"+"\033[1;31m"+",:::,"+w+b+"\/" +"\033[1;31m"+",:::,"+w+b+"\@@       "+w+"------------------")
-    #   print(w+b+"     /@@@|"+"\033[1;31m"+":::::"+w+b+"||"+"\033[1;31m" +":::::"+w+b+"|@@@\\     "+w+"Author by "+"\033[1;33m"+"@ZendrYz")
-    #   print(w+b+"    / @@@\\"+"\033[1;31m"+"':::'"+w+b +"/\\"+"\033[1;31m"+"':::'"+w+b+"/@@@ \\    "+w+"")
-    #   print(w+b+"   /  /@@@@@@@//\\\@@@@@@@\  \\   "+w+"")
-    #   print(w+b+"  (  /  '@@@@@====@@@@@'  \  )  "+w+"")
-    #   print(w+b+"   \(     /          \     )/")
-    #   print(w+b+"     \   (            )   /")
-    #   print(w+b+"          \          /"+w)
+#   print(w+d+"      ,,                ,,")
+#   print(w+d+"    (((((              )))))")
+#   print(w+d+"   ((((((              ))))))")
+#   print(w+d+"   ((((((              ))))))")
+#   print(w+d+"    ((((("+w+b+"\033[1;31m@@@@@@@@@@@@"+w+d+")))))")
+#   print(w+d+"      ((("+w+b+"@@@@@@@@@@@@@@@@"+w+d+")))    " +w+b+"Letal Tool - version 1.1")
+#   print(w+b+"      \@@/"+"\033[1;31m"+",:::,"+w+b+"\/" +"\033[1;31m"+",:::,"+w+b+"\@@       "+w+"------------------")
+#   print(w+b+"     /@@@|"+"\033[1;31m"+":::::"+w+b+"||"+"\033[1;31m" +":::::"+w+b+"|@@@\\     "+w+"Author by "+"\033[1;33m"+"@ZendrYz")
+#   print(w+b+"    / @@@\\"+"\033[1;31m"+"':::'"+w+b +"/\\"+"\033[1;31m"+"':::'"+w+b+"/@@@ \\    "+w+"")
+#   print(w+b+"   /  /@@@@@@@//\\\@@@@@@@\  \\   "+w+"")
+#   print(w+b+"  (  /  '@@@@@====@@@@@'  \  )  "+w+"")
+#   print(w+b+"   \(     /          \     )/")
+#   print(w+b+"     \   (            )   /")
+#   print(w+b+"          \          /"+w)
 
 os.system("cls")
+
+
 def main():
 
     print("""
@@ -340,7 +341,7 @@ def main():
 
     if menu == "6":
 
-        os.system("cls")
+        os.system("cls") 
 
         ip = input(Fore.RED + '[Letal Net TOOL] Coloca la IP a rastrear >> ')
 
@@ -348,7 +349,7 @@ def main():
 
         response = urlopen(url + ip)
 
-        data = response.read()
+        data = response.read() 
 
         values = json.loads(data)
         print("\n")
@@ -376,14 +377,19 @@ def main():
             Fore.MAGENTA + "[Letal Net TOOL] Introduzca el primer numero >> ")
 
         numero2 = input(
-            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el siguiente numero >> ")
+            Fore.MAGENTA + "[Letal Net TOOL] Introduzca el siguiente numero >>")
+
+        # if numero1 is not nu:
+        #   input(Fore.MAGNETA + "[Letal Net Tool] No ha introducido un numero valido. Presiona la tecla intro para continuar...")
+        #  os.system("cls")
+        # main()
 
         res = int(numero1) + int(numero2)
 
         print("El resultado es: ", + res)
         print('\n')
 
-        menudas = input(
+        olagente = input(
             Fore.WHITE + "Resultado completado. Presiona la tecla intro para continuar...")
 
         os.system("cls")
@@ -451,12 +457,12 @@ def main():
         f = open("Nitro Codes.txt", "w", encoding='utf-8')
 
         for n in range(int(num)):
-            y = ''.join(random.choice(string.ascii_uppercase +
-                                      string.digits + string.ascii_lowercase) for _ in range(24))
+            y = ''.join(random.choice(string.ascii_uppercase + string.digits + string.ascii_lowercase) for _ in range(24))
             f.write('https://discord.gift/')
             f.write(y)
             f.write("\n")
             os.system("cls")
+
 
         with open("Nitro Codes.txt") as f, open('Valid Codes.txt', 'w', encoding="UTF-8") as valid:
             for line in f:
@@ -486,6 +492,7 @@ def main():
         print()
         menu22331 = input(
             Fore.WHITE + "Presiona la tecla intro para volver al menu...")
+
 
 os.system("cls")
 main()
